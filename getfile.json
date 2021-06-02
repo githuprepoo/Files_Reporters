@@ -4,14 +4,12 @@
 
 "plugins_": {
 
-"Reply.lua":"https://t.me/iq_services",
-ملف الردود الخاص بالسورس
-----------------------------------------
-"games.lua":"https://t.me/iq_services",
-ملف الالعاب الخاص بالسورس
-----------------------------------------
-"commands.lua":"https://t.me/iq_services",
-ملف قائمة الاوامر الخاصه بالسورس
+"Reply.lua":"[ملف الردود الخاص بالسورس](https://t.me/iq_services)",
+
+"games.lua":"[ملف الالعاب الخاص بالسورس](https://t.me/iq_services)",
+
+"commands.lua":"[ملف قائمة الاوامر الخاصه بالسورس](https://t.me/iq_services)",
+
 
 }
 
