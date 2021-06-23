@@ -36,10 +36,10 @@ send(msg.chat_id_, msg.id_,Text_Games)
 end
 
 if text == 'كت تويت' or text == 'كت تويتت' then
-local url,res = http.request('http://209.250.249.209/ch/?id='..msg.sender_user_id_)
+local url,res = https.request('https://abbas.watanteam.tk/ch/joinch.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
-if data.Ch_Member.Info_BO6OK ~= true then
-send(msg.chat_id_,msg.id_,'\n❃∫عليك الاشتراك في قناة البوت \n❃∫قناة البوت ← { @BO6OK }')   
+if data.Ch_Member.Info_WaTaNTeaM ~= true then
+send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙ قناة السورس @WaTaNTeaM')   
 return false 
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
