@@ -1,21 +1,6 @@
 local function Reply(msg)
 local text = msg.content_.text_
 if not database:get(bot_id..'Reply:Status'..msg.chat_id_) then
-if text == 'مطور السورس' or text == 'مطور وطن' then
-TextReply = '[--> 𓆩•𝐀𝐁𝐁𝐀𝐒 𝐅𝐀𝐃𝐇𝐈𝐋•𓆪 ☬ <--](t.me/abbasfadhil)'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'مبرمج البوت' or text == 'مبرمج السورس' or text == 'مبرمج وطن' then
-TextReply = '[--> 𓆩•𝐀𝐁𝐁𝐀𝐒 𝐅𝐀𝐃𝐇𝐈𝐋•𓆪 ☬ <--](t.me/abbasfadhil)'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'منو المطور' or text == 'منو مطور' or text == 'وين المطور' then
-TextReply = '[--> 𓆩•𝐀𝐁𝐁𝐀𝐒 𝐅𝐀𝐃𝐇𝐈𝐋•𓆪 ☬ <--](t.me/abbasfadhil) حبيبي هذا مطور السورس '
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
 if text == 'هلو' then
 TextReply = 'هلاوات يكلبي نورت'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
