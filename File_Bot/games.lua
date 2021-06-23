@@ -43,7 +43,7 @@ send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك �
 return false 
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
-Amer = {'65','43','17','0001','564','666','0808','0909','999','555','123','12',};
+Amer = {'65','43','17','0001','564','666','0808','0909','999','555','123','12','77','88','99','66','55','44','33','22','11','1','4567','456','123','234','345','678','789',};
 name = Amer[math.random(#Amer)]
 database:del(bot_id..'Set:English:Bot'..msg.chat_id_)
 database:set(bot_id..':Set:English'..msg.chat_id_,name)
