@@ -98,7 +98,7 @@ name = string.gsub(name,'65467','هل يمكنك الكذب والاستمرار
 name = string.gsub(name,'6547','هل يمكنك تقديم الاعتذار عندما تقترف أي خطأ وتتحمل المسؤولية؟')
 name = string.gsub(name,'4356','هل يمكنك مسامحة شخص أخطأ بحقك لكنه قدم الاعتذار وشعر بالندم؟')
 name = string.gsub(name,'5675','هل يمكنك مسامحة شخص أخطأ بحقك لمجرد أنه عزيز بالنسبة لك؟')
-send(msg.chat_id_, msg.id_,' - اجب على السؤال > ('..name..')')
+send(msg.chat_id_, msg.id_,''..name..'')
 return false
 end
 end
