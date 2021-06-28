@@ -58,37 +58,37 @@ end
 end
 if text == 'تفعيل all' or text == 'تفعيل @all' and CoSu(msg) then   
 if database:get(bot_id..'Cick:all'..msg.chat_id_) then
-Text = ' *⌔︙تم تفعيل امر @all*'
+Text = ' *✯︙تم تفعيل امر @all*'
 database:del(bot_id..'Cick:all'..msg.chat_id_)  
 else
-Text = ' *⌔︙بالتاكيد تم تفعيل امر @all*'
+Text = ' *✯︙بالتاكيد تم تفعيل امر @all*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'تعطيل all' or text == 'تعطيل @all' and CoSu(msg) then  
 if not database:get(bot_id..'Cick:all'..msg.chat_id_) then
 database:set(bot_id..'Cick:all'..msg.chat_id_,true)  
-Text = '\n *⌔︙تم تعطيل امر @all*'
+Text = '\n *✯︙تم تعطيل امر @all*'
 else
-Text = '\n *⌔︙بالتاكيد تم تعطيل امر @all*'
+Text = '\n *✯︙بالتاكيد تم تعطيل امر @all*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'تفعيل تاك للكل' or text == 'تفعيل التاك' or text == 'تفعيل تاك' and CoSu(msg) then   
 if database:get(bot_id..'Cick:all'..msg.chat_id_) then
-Text = ' *⌔︙تم تفعيل امر @all*'
+Text = ' *✯︙تم تفعيل امر @all*'
 database:del(bot_id..'Cick:all'..msg.chat_id_)  
 else
-Text = ' *⌔︙بالتاكيد تم تفعيل امر تاك للكل*'
+Text = ' *✯︙بالتاكيد تم تفعيل امر تاك للكل*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'تعطيل تاك للكل' or text == 'تعطيل التاك' or text == 'تعطيل تاك' and CoSu(msg) then  
 if not database:get(bot_id..'Cick:all'..msg.chat_id_) then
 database:set(bot_id..'Cick:all'..msg.chat_id_,true)  
-Text = '\n *⌔︙تم تعطيل امر @all*'
+Text = '\n *✯︙تم تعطيل امر @all*'
 else
-Text = '\n *⌔︙بالتاكيد تم تعطيل امر تاك للكل*'
+Text = '\n *✯︙بالتاكيد تم تعطيل امر تاك للكل*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
