@@ -59,14 +59,14 @@ end
 
 
 
-if text and text:match("^@all (.*)$") and CoSu then
+if text and text:match("^@all (.*)$") and CoSu(msg) then
 local Textxt = text:match("^@all (.*)$")
 if not database:get(bot_id..'Cick:all'..msg.chat_id_) then
 if database:get(bot_id.."abbas:all:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
 return 
 send(msg.chat_id_, msg.id_,"*✯︙انتظر 7 دقائق من فضلك من فضلك\n✯︙ثم اعد المحاوله بعدها*")
 end
-database:setex(bot_id..'abbas:all:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
+database:setex(bot_id..'abbas:all:Time'..msg.chat_id_..':'..msg.sender_user_id_,60,true)
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub('-100','')},function(argg,dataa) 
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = dataa.member_count_},function(ta,amir)
 x = 0
@@ -76,7 +76,7 @@ for k, v in pairs(list) do
 tdcli_function({ID="GetUser",user_id_ = v.user_id_},function(arg,data)
 if x == 5 or x == tags or k == 0 then
 tags = x + 5
-t = "#all ['..Textxt..']"
+t = "#all '['..Textxt..']'"
 end
 x = x + 1
 tagname = data.first_name_
