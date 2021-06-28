@@ -76,7 +76,7 @@ for k, v in pairs(list) do
 tdcli_function({ID="GetUser",user_id_ = v.user_id_},function(arg,data)
 if x == 5 or x == tags or k == 0 then
 tags = x + 5
-t = "#all"
+t = "#all ['..Textxt..']"
 end
 x = x + 1
 tagname = data.first_name_
