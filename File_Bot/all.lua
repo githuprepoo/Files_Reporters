@@ -3,7 +3,7 @@ local text = msg.content_.text_
 function s_api(web) 
 local info, res = https.request(web) 
 local req = json:decode(info)
- if res ~= 200 then 
+if res ~= 200 then 
 return false 
 end 
 if not req.ok then 
@@ -23,13 +23,13 @@ elseif markdown == 'html' then
 end 
 return s_api(url)  
 end
-if text == "@all" and CoSu(msg) then
+if text == "@all" or text == "all" or text == "تاك للكل" and CoSu(msg) then
 if not database:get(bot_id..'Cick:all'..msg.chat_id_) then
-if database:get(bot_id.."VVVZVV:all:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
+if database:get(bot_id.."abbas:all:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
 return 
-send(msg.chat_id_, msg.id_,"*انتظر دقيقه من فضلك*")
+send(msg.chat_id_, msg.id_,"*انتظر 7 دقائق من فضلك من فضلك*")
 end
-database:setex(bot_id..'VVVZVV:all:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
+database:setex(bot_id..'abbas:all:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub('-100','')},function(argg,dataa) 
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = dataa.member_count_},function(ta,amir)
 x = 0
@@ -56,7 +56,7 @@ end,nil)
 end,nil)
 end
 end
-if text == 'تفعيل all' and CoSu(msg) then   
+if text == 'تفعيل all' or text == 'تفعيل @all' and CoSu(msg) then   
 if database:get(bot_id..'Cick:all'..msg.chat_id_) then
 Text = ' *⌔︙تم تفعيل امر @all*'
 database:del(bot_id..'Cick:all'..msg.chat_id_)  
@@ -65,12 +65,30 @@ Text = ' *⌔︙بالتاكيد تم تفعيل امر @all*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'تعطيل all' and CoSu(msg) then  
+if text == 'تعطيل all' or text == 'تعطيل @all' and CoSu(msg) then  
 if not database:get(bot_id..'Cick:all'..msg.chat_id_) then
 database:set(bot_id..'Cick:all'..msg.chat_id_,true)  
 Text = '\n *⌔︙تم تعطيل امر @all*'
 else
 Text = '\n *⌔︙بالتاكيد تم تعطيل امر @all*'
+end
+send(msg.chat_id_, msg.id_,Text) 
+end
+if text == 'تفعيل تاك للكل' or text == 'تفعيل التاك' or text == 'تفعيل تاك' and CoSu(msg) then   
+if database:get(bot_id..'Cick:all'..msg.chat_id_) then
+Text = ' *⌔︙تم تفعيل امر @all*'
+database:del(bot_id..'Cick:all'..msg.chat_id_)  
+else
+Text = ' *⌔︙بالتاكيد تم تفعيل امر تاك للكل*'
+end
+send(msg.chat_id_, msg.id_,Text) 
+end
+if text == 'تعطيل تاك للكل' or text == 'تعطيل التاك' or text == 'تعطيل تاك' and CoSu(msg) then  
+if not database:get(bot_id..'Cick:all'..msg.chat_id_) then
+database:set(bot_id..'Cick:all'..msg.chat_id_,true)  
+Text = '\n *⌔︙تم تعطيل امر @all*'
+else
+Text = '\n *⌔︙بالتاكيد تم تعطيل امر تاك للكل*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
