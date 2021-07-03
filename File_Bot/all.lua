@@ -23,7 +23,7 @@ elseif markdown == 'html' then
 end 
 return s_api(url)  
 end
-if text == "@all" or text == "all" or text == "تاك للكل" and CoSu(msg) then
+if text == "@all" or text == "all" and CoSu(msg) then
 if not database:get(bot_id..'Cick:all'..msg.chat_id_) then
 if database:get(bot_id.."abbas:all:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
 return 
@@ -71,24 +71,6 @@ database:set(bot_id..'Cick:all'..msg.chat_id_,true)
 Text = '\n *✯︙تم تعطيل امر @all*'
 else
 Text = '\n *✯︙بالتاكيد تم تعطيل امر @all*'
-end
-send(msg.chat_id_, msg.id_,Text) 
-end
-if text == 'تفعيل تاك للكل' or text == 'تفعيل التاك' or text == 'تفعيل تاك' and CoSu(msg) then   
-if database:get(bot_id..'Cick:all'..msg.chat_id_) then
-Text = ' *✯︙تم تفعيل امر @all*'
-database:del(bot_id..'Cick:all'..msg.chat_id_)  
-else
-Text = ' *✯︙بالتاكيد تم تفعيل امر تاك للكل*'
-end
-send(msg.chat_id_, msg.id_,Text) 
-end
-if text == 'تعطيل تاك للكل' or text == 'تعطيل التاك' or text == 'تعطيل تاك' and CoSu(msg) then  
-if not database:get(bot_id..'Cick:all'..msg.chat_id_) then
-database:set(bot_id..'Cick:all'..msg.chat_id_,true)  
-Text = '\n *✯︙تم تعطيل امر @all*'
-else
-Text = '\n *✯︙بالتاكيد تم تعطيل امر تاك للكل*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
