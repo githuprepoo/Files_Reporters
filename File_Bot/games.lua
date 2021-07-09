@@ -38,11 +38,14 @@ send(msg.chat_id_, msg.id_,Text_Games)
 end
 
 if text == 'كت تويت' or text == 'كت تويتت' then
-local url,res = https.request('https://abbas.watanteam.tk/ch/joinch.php?id='..msg.sender_user_id_)
-data = JSON.decode(url)
-if data.Ch_Member.Info_WaTaNTeaM ~= true then
-send(msg.chat_id_,msg.id_,'✯︙اهلا بك عزيزي ،\n✯︙اشترك في قناة السورس\n✯︙ثم ارسل الامر مره اخرى\n✯︙ قناة السورس @WaTaNTeaM')   
-return false 
+if AddChannel(msg.sender_user_id_) == false then
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
+else
+send(msg.chat_id_, msg.id_,' ✯︙لا تستطيع استخدام البوت \n  ✯︙يرجى الاشتراك بالقناه اولا \n  ✯︙اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+end
+return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
 Amer = {'65','43','17','0001','564','666','0808','0909','999','555','123','12','77','88','99','66','55','44','33','22','11','56734','4567','456','123','234','345','678','789','890','5675','4356','6547','65467','13456','7867','87456','7654','12','13','14','15','16','17','18','19','20','21','23',};
@@ -389,7 +392,7 @@ end
 end
 end
 end
-if text == 'خمن' or text == 'التخمين' then   
+if text == 'خمن' or text == 'التخمين' or text == 'تخمين' then   
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
