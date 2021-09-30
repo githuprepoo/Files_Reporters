@@ -97,19 +97,3 @@ File:write(t)
 File:close()
 sendDocument(SUDO, 0,0, 1, nil, './'..bot_id..'.json', '- عدد كروبات التي في البوت { '..#list..' }\n- عدد مشتركين البوت { '..#Abs..' }')
 end
-function download_to_file(url, file_path) 
-local respbody = {} 
-local options = { url = url, sink = ltn12.sink.table(respbody), redirect = true } 
-local response = nil 
-options.redirect = false 
-response = {https.request(options)} 
-local code = response[2] 
-local headers = response[3] 
-local status = response[4] 
-if code ~= 200 then return false, code 
-end 
-file = io.open(file_path, "w+") 
-file:write(table.concat(respbody)) 
-file:close() 
-return file_path, code 
-end 
