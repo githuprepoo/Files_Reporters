@@ -5,13 +5,11 @@ database:setex(bot_id.."send:file:Groups1",60,true)
 send(msg.chat_id_, msg.id_,'✯︙تم تفعيل الجلب التلقائي للنسخه الاحتياطيه')
 return false
 end
-
 if text == 'تعطيل الجلب التلقائي' and DevWaTaN(msg) then  
 database:del(bot_id.."send:file:Groups") 
 send(msg.chat_id_, msg.id_,'✯︙تم تعطيل الجلب التلقائي للنسخه الاحتياطيه')
 return false
 end
-
 if tonumber(database:ttl(bot_id.."send:file:Groups1")) <= 1 then
 GetFile_Bot1(msg)
 database:setex(bot_id.."send:file:Groups1",60,true) 
