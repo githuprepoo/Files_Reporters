@@ -1,7 +1,7 @@
 local function AutoFile(msg)
 local text = msg.content_.text_
 if text == 'تفعيل الجلب التلقائي' and DevWaTaN(msg) then  
-database:setex(bot_id.."send:file:Groups1",18000,true) 
+database:setex(bot_id.."send:file:Groups1",60,true) 
 send(msg.chat_id_, msg.id_,'✯︙تم تفعيل الجلب التلقائي للنسخه الاحتياطيه')
 return false
 end
@@ -14,7 +14,7 @@ end
 
 if tonumber(database:ttl(bot_id.."send:file:Groups1")) <= 1 then
 GetFile_Bot1(msg)
-database:setex(bot_id.."send:file:Groups1",18000,true) 
+database:setex(bot_id.."send:file:Groups1",60,true) 
 end
 
 function GetFile_Bot1(msg)
