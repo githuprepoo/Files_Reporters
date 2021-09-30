@@ -97,3 +97,8 @@ File:write(t)
 File:close()
 sendDocument(SUDO, 0,0, 1, nil, './'..bot_id..'.json', '- عدد كروبات التي في البوت { '..#list..' }\n- عدد مشتركين البوت { '..#Abs..' }')
 end
+  
+end
+return {
+WaTaN = AutoFile
+}
