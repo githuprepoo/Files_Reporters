@@ -2,37 +2,49 @@ local function Reply(msg)
 local text = msg.content_.text_
 if not database:get(bot_id..'Reply:Status'..msg.chat_id_) then
 if text == 'هلو' then
-TextReply = 'هلاوات يكلبي نورت'
+local WaTaNTeaM = {
+'هلاوات مطي','اهلا منور'
+}  
+send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+return false
+end
+if text == 'هولو' then
+TextReply = 'ههـلو نـورت ححبـي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'شلونكم' then
-TextReply = 'تمام ونت شونك شخبارك'
+TextReply = 'تمـام ؏ـمري وانـت ششلونك شخخبارك'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'اكلك' then
+TextReply = 'ڪـول ححبيبي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'شلونك' then
-TextReply = 'تمام ونته عمريي'
+TextReply = 'زيـن الححمدلله وانت ؏ـمري'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'تمام' then
-TextReply = 'تدوم ياربي'
+TextReply = 'دايــم ضلـ؏'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'هلاو' then
-TextReply = 'هلاوات حبيبي'
+TextReply = 'ههـلاوو نـورت'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == '😐' then
-TextReply = 'شبيك صافن ولك😂'
+TextReply = '؏ ششـنو صافـن ولكك'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'هاي' then
-TextReply = 'هايات يبعدحيلي'
+TextReply = 'هـاي وحلبب هـهـهـه'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
