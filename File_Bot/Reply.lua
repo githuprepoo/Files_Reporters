@@ -1,63 +1,120 @@
 local function Reply(msg)
 local text = msg.content_.text_
 if not database:get(bot_id..'Reply:Status'..msg.chat_id_) then
-if text == 'هلو' then
+if text == 'هلو' or text == 'هلوو' or text == 'اهلا' or text == 'هلاو' or text == 'هلاوو' then
 local WaTaNTeaM = {
-'هلاوات مطي','اهلا منور'
+'ههــلا ؏ـمري 🤭','ههـلو نـورت ححبـي ♥️','ههـلا ححبـيبي 🤗','ههــلاوو ڪـلبي'
 }  
 send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
 return false
 end
-if text == 'هولو' then
-TextReply = 'ههـلو نـورت ححبـي'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
+if text == 'شلونك' or text == 'شلونكم' then
+local WaTaNTeaM = {
+'تتمـام ححـب وانـت شلـونكك 🤭💘'
+}  
+send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
 return false
 end
-if text == 'شلونكم' then
-TextReply = 'تمـام ؏ـمري وانـت ششلونك شخخبارك'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
+if text == 'باي' or text == 'بااي' or text == 'اروح' or text == 'اروح احسن' or text == 'اولي احسن' or text == 'راح اروح' or text == 'باي انام' then 
+local WaTaNTeaM = {
+'أُرٌجُعُ عٍيدِهآآ مٍوو تنِْسةه 𖠙 🤤♥️','وين رايـح خخـلينا متونسيـن','شبيك ضججت ححبي'
+}  
+send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
 return false
 end
-if text == 'اكلك' then
-TextReply = 'ڪـول ححبيبي'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
+if text == 'شونك' or text == 'شونج' or text == 'شلونج' or text == 'شونكم' or text == 'شلخبار' or text == 'شلون الاخبار' or text == 'شخبارك' then
+local WaTaNTeaM = {
+'ماﺷ͠ يةھَہّ يﻋ̝̚مريي ۅاﻧﺗ̲ت 𖠙 🤤♥️','الحۡمۘدللهۂَ ٰوانۨہتت 𖠙 🤤♥️','تمۘامۘ عمۘري ٰوانۨہتت 𖠙 🤤♥️'
+}  
+send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
 return false
 end
-if text == 'شلونك' then
-TextReply = 'زيـن الححمدلله وانت ؏ـمري'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
+if text == 'وينك' or text == 'وينج' then
+local WaTaNTeaM = {
+'مْوٌجہوٌدِ يہمْگُ يحلوُ 𖠙 😉♥️'
+}  
+send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
 return false
 end
-if text == 'تمام' then
-TextReply = 'دايــم ضلـ؏'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
+if text == 'بوت عاوي' or text == 'بوت زربه' or text == 'البوت عاوي' or text == 'البوت زربه' then
+local WaTaNTeaM = {
+'اطردكك تجرب ؟ ، 😕🔪'
+}  
+send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
 return false
 end
-if text == 'هلاو' then
-TextReply = 'ههـلاوو نـورت'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
+if text == 'اكلك' or text == 'اكلج' then
+local WaTaNTeaM = {
+'ڪـولي ومااڪـول لاححـد 😂','ڪـول ححبيبي'
+}  
+send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
 return false
 end
+if text == 'فرخ' then
+local WaTaNTeaM = {
+'ٰوينۨہهۂَ خۡل احۡصرهۂَ 𖠙 😹♥️','استغفـر الله عيب ابني'
+}  
+send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+return false
+end
+if text == 'تمام' or text == 'بخير' or text == 'الحمدلله' or text == 'الحمدلله بخير' or text == 'الحمدلله تمام' or text == 'بخير الحمدلله' or text == 'تمام الحمدلله' then
+local WaTaNTeaM = {
+'ععسـاكك ححبيبي','دايـم ضلـ؏'
+}  
+send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+return false
+end
+if text == 'دي' or text == 'ديي' or text == 'دي بابه' then
+local WaTaNTeaM = {
+'آخلُِآقٌڪڪ لُِڪڪ 𖠙 😒🔪','انججب ادبسزز 🔪🔪'
+}  
+send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+return false
+end
+if text == 'سلام عليكم' or text == 'السلام عليكم' or text == 'سلام وعليكم' or text == 'السلام وعليكم' then
+local WaTaNTeaM = {
+'ياھَہّلْاا ۅﻋ̝̚لْيڪْم الْﺳ̭͠ لْام 𖠙 🤤♥️'
+}  
+send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+return false
+end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
+if text == '😭💔' or text == '😭😭' or text == '😭😭😭' or text == '😿💔' or text == '😭😭😭' or text == '😭😭😭😭' or text == '🌚💔' or text == '💔🌚' or text == '🚶‍♂💔' or text == '💔' or text == '😔💔' or text == '🚶‍♀💔' or text == '😭' then
+local WaTaNTeaM = {
+'مآآعٍآشُ آلُِي يزعٍلُِڪڪ 𖠙 😏♥️','منــو وياكك ليش تبججيي','ههـاي ليشش هيـجج','شبّيي اﻟ̣̣פﻟ̣̣و 𖠙 😿💔'
+}  
+send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+return false
+end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == '😐' then
 TextReply = '؏ ششـنو صافـن ولكك'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'هاي' then
 TextReply = 'هـاي وحلبب هـهـهـه'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'اريد اكبل' then
 TextReply = 'اني هم اريد اكبل قابل ربي وحد'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'لتزحف' then
 TextReply = 'دعوفه يزحف شعليك بي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'كلخرا' then
 TextReply = 'مااكلك حبيبي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -65,16 +122,6 @@ return false
 end
 if text == 'زاحف' then
 TextReply = 'زاحف ع خالتك شكره'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'دي' then
-TextReply = 'امشيك بيها'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'فرخ' then
-TextReply = 'وينه بالله خل احصره'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -93,11 +140,6 @@ TextReply = 'يحياتي واني هم احبك'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'باي' then
-TextReply = 'وين رايح حبي خلينه متونسين'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
 if text == 'عوائل' then
 TextReply = 'اربط فيشه حبي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -113,8 +155,9 @@ TextReply = 'وين اوكف لك'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'وين المدير' then
-TextReply = 'تفظل شرايد حبي'
+TextReply = 'تفضل شرايد حبي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -123,6 +166,7 @@ TextReply = 'صار حبي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'تحبني' then
 TextReply = 'سؤال صعب خليني افكر'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -158,6 +202,7 @@ TextReply = 'وين رايح تعال حبي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == '🙂' then
 TextReply = 'ثكيل مطي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -188,6 +233,7 @@ TextReply = 'والمطلوب شرايد'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'اها' then
 TextReply = 'قابل اغشك حب'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -198,6 +244,7 @@ TextReply = 'اسمي سعديه ام لبن'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'شسمك' then
 TextReply = 'اسمي صكار البنات🤭'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -213,6 +260,7 @@ TextReply = 'مساء الياسمين'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'المدرسه' then
 TextReply = 'لاجيب اسمها لاسطرك'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -233,6 +281,7 @@ TextReply = 'ماغلس لو تموت'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'حارة' then
 TextReply = 'اي ولله كلش حاره وفف'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -273,6 +322,7 @@ TextReply = 'اي كلبي اني موجود'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'فديت' then
 TextReply = 'فداك ثولان الكروب'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -293,25 +343,26 @@ TextReply = 'جذاب يضحك عليج'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'انتة منو' then
 TextReply = 'اني بوت حبي'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 end
-
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'تفعيل ردود البوت' and Manager(msg) then
 database:del(bot_id..'Reply:Status'..msg.chat_id_)
 send(msg.chat_id_, msg.id_,'✯︙تم تفعيل ردود البوت')
 return false
 end
-
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'تعطيل ردود البوت' and Manager(msg) then
 database:set(bot_id..'Reply:Status'..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_,'✯︙تم تعطيل ردود البوت')
 return false
 end
-
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 end
 return {
 WaTaN = Reply

@@ -27,7 +27,7 @@ Text_Games = [[
 ]]
 send(msg.chat_id_, msg.id_,Text_Games) 
 end
-
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'كت تويت' and ChCheck(msg) then
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
 local WaTaNTeaM = {
@@ -40,7 +40,7 @@ send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')
 return false
 end
 end
-
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'السمايلات' and ChCheck(msg) or text == 'السمايل' and ChCheck(msg) then
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
 database:del(bot_id..'Set:Sma'..msg.chat_id_)
@@ -109,7 +109,7 @@ send(msg.chat_id_, msg.id_,' ✯︙اسرع واحد يرتبها » {'..name..'
 return false
 end
 end
-------------------------------------------------------------------------
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == ''..(database:get(bot_id..'Klam:Speed'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Speed:Tr'..msg.chat_id_) then
 if not database:get(bot_id..'Speed:Tr'..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,' ✯︙الف مبروك لقد فزت \n ✯︙للعب مره اخره ارسل »{ الاسرع , ترتيب }')
@@ -117,7 +117,7 @@ database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)
 end
 database:set(bot_id..'Speed:Tr'..msg.chat_id_,true)
 end 
-
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'الحزوره' and ChCheck(msg) or text == 'حزوره' and ChCheck(msg) then
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
 database:del(bot_id..'Set:Hzora'..msg.chat_id_)
@@ -161,7 +161,7 @@ send(msg.chat_id_, msg.id_,' ✯︙اسرع واحد يحل الحزوره ↓\n
 return false
 end
 end
-------------------------------------------------------------------------
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == ''..(database:get(bot_id..'Klam:Hzor'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Hzora'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Hzora'..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,' ✯︙الف مبروك لقد فزت \n ✯︙للعب مره اخره ارسل »{ حزوره }')
@@ -169,7 +169,7 @@ database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)
 end
 database:set(bot_id..'Set:Hzora'..msg.chat_id_,true)
 end 
-
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'المعاني' and ChCheck(msg) or text == 'معاني' and ChCheck(msg) then
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
 database:del(bot_id..'Set:Maany'..msg.chat_id_)
@@ -205,7 +205,7 @@ send(msg.chat_id_, msg.id_,' ✯︙اسرع واحد يدز معنى السما�
 return false
 end
 end
-------------------------------------------------------------------------
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == ''..(database:get(bot_id..'Maany'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Maany'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Maany'..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,' ✯︙ الف مبروك لقد فزت \n ✯︙للعب مره اخره ارسل »{ معاني }')
@@ -248,7 +248,7 @@ send(msg.chat_id_, msg.id_,' ✯︙اسرع واحد يدز العكس » {'..na
 return false
 end
 end
-------------------------------------------------------------------------
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == ''..(database:get(bot_id..'Set:Aks:Game'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Aks'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Aks'..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,' ✯︙الف مبروك لقد فزت \n ✯︙للعب مره اخره ارسل »{ العكس }')
@@ -256,7 +256,7 @@ database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)
 end
 database:set(bot_id..'Set:Aks'..msg.chat_id_,true)
 end 
-
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if database:get(bot_id.."GAME:TKMEN" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
 if text and text:match("^(%d+)$") then
 local NUM = text:match("^(%d+)$")
@@ -290,7 +290,7 @@ database:setex(bot_id.."GAME:TKMEN" .. msg.chat_id_ .. "" .. msg.sender_user_id_
 return false  
 end
 end
-
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if database:get(bot_id.."SET:GAME" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then  
 if text and text:match("^(%d+)$") then
 local NUM = text:match("^(%d+)$")
@@ -308,7 +308,7 @@ send(msg.chat_id_, msg.id_,' ✯︙للاسف لقد خسرت \n ✯︙المح�
 end
 end
 end
-
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'محيبس' and ChCheck(msg) or text == 'البات' and ChCheck(msg) then
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then   
 Num = math.random(1,6)
@@ -325,8 +325,7 @@ database:setex(bot_id.."SET:GAME" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 
 return false  
 end
 end
-
-------------------------------------------------------------------------
+------ لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'المختلف' and ChCheck(msg) or text == 'مختلف' and ChCheck(msg) then
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
 mktlf = {'😸','☠','🐼','🐇','🌑','🌚','⭐️','✨','⛈','🌥','⛄️','👨‍🔬','👨‍💻','👨‍🔧','👩‍🍳','🧚‍♀','🧜‍♂','🧝‍♂','🙍‍♂','🧖‍♂','👬','👨‍👨‍👧','🕒','🕤','⌛️','📅',};
@@ -363,7 +362,7 @@ send(msg.chat_id_, msg.id_,' ✯︙اسرع واحد يدز الاختلاف » 
 return false
 end
 end
-------------------------------------------------------------------------
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == ''..(database:get(bot_id..':Set:Moktlf'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:Moktlf:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:Moktlf'..msg.chat_id_)
@@ -372,7 +371,7 @@ database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)
 end
 database:set(bot_id..'Set:Moktlf:Bot'..msg.chat_id_,true)
 end
-------------------------------------------------------------------------
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'الرياضيات' and ChCheck(msg) or text == 'رياضيات' and ChCheck(msg) then
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
 Amer = {'22','30','33','60','90','2','5','36','16','88','50','10','19',};
@@ -396,7 +395,7 @@ send(msg.chat_id_, msg.id_,' ✯︙حل المسأله الرياضيه  » {'..
 return false
 end
 end
-------------------------------------------------------------------------
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == ''..(database:get(bot_id..':Set:Ryadeat'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:Ryadeat:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:Ryadeat'..msg.chat_id_)
@@ -405,7 +404,7 @@ database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)
 end
 database:set(bot_id..'Set:Ryadeat:Bot'..msg.chat_id_,true)
 end
-------------------------------------------------------------------------
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'انكليزي' and ChCheck(msg) or text == 'الانكليزي' and ChCheck(msg) then
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
 Amer = {'معلومات','قنوات','مجموعات','كتاب','تفاحه','مختلف','سدني','فلوس','اعلم','ذئب','تمساح','ذكي',};
@@ -428,7 +427,7 @@ send(msg.chat_id_, msg.id_,' ✯︙ترجم الكلمات الاتيه  » {'..
 return false
 end
 end
-------------------------------------------------------------------------
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == ''..(database:get(bot_id..':Set:English'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:English:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:English'..msg.chat_id_)
@@ -437,7 +436,7 @@ database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)
 end
 database:set(bot_id..'Set:English:Bot'..msg.chat_id_,true)
 end
-------------------------------------------------------------------------
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'امثله' and ChCheck(msg) or text == 'الامثله' and ChCheck(msg) then
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
 mthal = {'جوز','ضراطه','الحبل','الحافي','شقره','بيدك','سلايه','النخله','الخيل','حداد','المبلل','يركص','القرد','العنب','العمه','الخبز','بالحصاد','شهر','شكه','يكحلهه',};
@@ -468,7 +467,7 @@ send(msg.chat_id_, msg.id_,' ✯︙اسرع واحد يكمل المثل » {'..
 return false
 end
 end
-------------------------------------------------------------------------
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == ''..(database:get(bot_id..'Set:Amth'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:Amth:Bot'..msg.chat_id_) then 
 database:del(bot_id..'Set:Amth'..msg.chat_id_)
@@ -495,7 +494,7 @@ Text = '\n ✯︙بالتاكيد تم تفعيل الالعاب'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-
+----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 end
 return {
 WaTaN = games
