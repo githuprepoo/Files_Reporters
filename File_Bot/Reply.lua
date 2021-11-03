@@ -2,92 +2,92 @@ local function Reply(msg)
 local text = msg.content_.text_
 if not database:get(bot_id..'Reply:Status'..msg.chat_id_) then
 if text == 'هلو' and ChanSub(msg) or text == 'هلوو' and ChanSub(msg) or text == 'اهلا' and ChanSub(msg) or text == 'هلاو' and ChanSub(msg) or text == 'هلاوو' and ChanSub(msg) then
-local WaTaNTeaM = {
+local YYSOS = {
 'ههــلا ؏ـمري 🤭','ههـلو نـورت ححبـي ♥️','ههـلا ححبـيبي 🤗','ههــلاوو ڪـلبي'
 }  
-send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+send(msg.chat_id_, msg.id_,''..YYSOS[math.random(#YYSOS)]..'')  
 return false
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'شلونك' and ChanSub(msg) or text == 'شلونكم' and ChanSub(msg) then
-local WaTaNTeaM = {
+local YYSOS = {
 'تتمـام ححـب وانـت شلـونكك 🤭💘'
 }  
-send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+send(msg.chat_id_, msg.id_,''..YYSOS[math.random(#YYSOS)]..'')  
 return false
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'باي' and ChanSub(msg) or text == 'بااي' and ChanSub(msg) or text == 'اروح' and ChanSub(msg) or text == 'اروح احسن' and ChanSub(msg) or text == 'اولي احسن' and ChanSub(msg) or text == 'راح اروح' and ChanSub(msg) or text == 'باي انام' and ChanSub(msg) then 
-local WaTaNTeaM = {
+local YYSOS = {
 'أُرٌجُعُ عٍيدِهآآ مٍوو تنِْسةه 𖠙 🤤♥️','وين رايـح خخـلينا متونسيـن','شبيك ضججت ححبي'
 }  
-send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+send(msg.chat_id_, msg.id_,''..YYSOS[math.random(#YYSOS)]..'')  
 return false
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'شونك' and ChanSub(msg) or text == 'شونج' and ChanSub(msg) or text == 'شلونج' and ChanSub(msg) or text == 'شونكم' and ChanSub(msg) or text == 'شلخبار' and ChanSub(msg) or text == 'شلون الاخبار' and ChanSub(msg) or text == 'شخبارك' and ChanSub(msg) then
-local WaTaNTeaM = {
+local YYSOS = {
 'ماﺷ͠ يةھَہّ يﻋ̝̚مريي ۅاﻧﺗ̲ت 𖠙 🤤♥️','الحۡمۘدللهۂَ ٰوانۨہتت 𖠙 🤤♥️','تمۘامۘ عمۘري ٰوانۨہتت 𖠙 🤤♥️'
 }  
-send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+send(msg.chat_id_, msg.id_,''..YYSOS[math.random(#YYSOS)]..'')  
 return false
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == 'وينك' or text == 'وينج' then
-local WaTaNTeaM = {
+local YYSOS = {
 'مْوٌجہوٌدِ يہمْگُ يحلوُ 𖠙 😉♥️'
 }  
-send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+send(msg.chat_id_, msg.id_,''..YYSOS[math.random(#YYSOS)]..'')  
 return false
 end
 if text == 'بوت عاوي' and ChanSub(msg) or text == 'بوت زربه' and ChanSub(msg) or text == 'البوت عاوي' and ChanSub(msg) or text == 'البوت زربه' and ChanSub(msg) then
-local WaTaNTeaM = {
+local YYSOS = {
 'اطردكك تجرب ؟ ، 😕🔪'
 }  
-send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+send(msg.chat_id_, msg.id_,''..YYSOS[math.random(#YYSOS)]..'')  
 return false
 end
 if text == 'اكلك' and ChanSub(msg) or text == 'اكلج' and ChanSub(msg) then
-local WaTaNTeaM = {
+local YYSOS = {
 'ڪـولي ومااڪـول لاححـد 😂','ڪـول ححبيبي'
 }  
-send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+send(msg.chat_id_, msg.id_,''..YYSOS[math.random(#YYSOS)]..'')  
 return false
 end
 if text == 'فرخ' and ChanSub(msg) then
-local WaTaNTeaM = {
+local YYSOS = {
 'ٰوينۨہهۂَ خۡل احۡصرهۂَ 𖠙 😹♥️','استغفـر الله عيب ابني'
 }  
-send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+send(msg.chat_id_, msg.id_,''..YYSOS[math.random(#YYSOS)]..'')  
 return false
 end
 if text == 'تمام' and ChanSub(msg) or text == 'بخير' and ChanSub(msg) or text == 'الحمدلله' and ChanSub(msg) or text == 'الحمدلله بخير' and ChanSub(msg) or text == 'الحمدلله تمام' and ChanSub(msg) or text == 'بخير الحمدلله' and ChanSub(msg) or text == 'تمام الحمدلله' and ChanSub(msg) then
-local WaTaNTeaM = {
+local YYSOS = {
 'ععسـاكك ححبيبي','دايـم ضلـ؏'
 }  
-send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+send(msg.chat_id_, msg.id_,''..YYSOS[math.random(#YYSOS)]..'')  
 return false
 end
 if text == 'دي' and ChanSub(msg) or text == 'ديي' and ChanSub(msg) or text == 'دي بابه' and ChanSub(msg) then
-local WaTaNTeaM = {
+local YYSOS = {
 'آخلُِآقٌڪڪ لُِڪڪ 𖠙 😒🔪','انججب ادبسزز 🔪🔪'
 }  
-send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+send(msg.chat_id_, msg.id_,''..YYSOS[math.random(#YYSOS)]..'')  
 return false
 end
 if text == 'سلام عليكم' and ChanSub(msg) or text == 'السلام عليكم' and ChanSub(msg) or text == 'سلام وعليكم' and ChanSub(msg) or text == 'السلام وعليكم' and ChanSub(msg) then
-local WaTaNTeaM = {
+local YYSOS = {
 'ياھَہّلْاا ۅﻋ̝̚لْيڪْم الْﺳ̭͠ لْام 𖠙 🤤♥️'
 }  
-send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+send(msg.chat_id_, msg.id_,''..YYSOS[math.random(#YYSOS)]..'')  
 return false
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----
 if text == '😭💔' and ChanSub(msg) or text == '😭😭' and ChanSub(msg) or text == '😭😭😭' and ChanSub(msg) or text == '😿💔' and ChanSub(msg) or text == '😭😭😭' and ChanSub(msg) or text == '😭😭😭😭' and ChanSub(msg) or text == '🌚💔' and ChanSub(msg) or text == '💔🌚' and ChanSub(msg) or text == '🚶‍♂💔' and ChanSub(msg) or text == '💔' and ChanSub(msg) or text == '😔💔' and ChanSub(msg) or text == '🚶‍♀💔' and ChanSub(msg) or text == '😭' and ChanSub(msg) then
-local WaTaNTeaM = {
+local YYSOS = {
 'مآآعٍآشُ آلُِي يزعٍلُِڪڪ 𖠙 😏♥️','منــو وياكك ليش تبججيي','ههـاي ليشش هيـجج','شبّيي اﻟ̣̣פﻟ̣̣و 𖠙 😿💔'
 }  
-send(msg.chat_id_, msg.id_,''..WaTaNTeaM[math.random(#WaTaNTeaM)]..'')  
+send(msg.chat_id_, msg.id_,''..YYSOS[math.random(#YYSOS)]..'')  
 return false
 end
 ----- لن ابرئ الذمة لأي شخص يأخذ حرفاً او رقما من ملفي ، ايٍ كان الشخص لن ابرئ الذمة لهُ -----

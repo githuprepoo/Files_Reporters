@@ -25,11 +25,11 @@ return s_api(url)
 end
 if text == "@all" and BasicConstructor(msg) or text == "all" and BasicConstructor(msg) then
 if not database:get(bot_id..'Cick:all'..msg.chat_id_) then
-if database:get(bot_id.."abbas:all:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
+if database:get(bot_id.."rep:all:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
 return 
 send(msg.chat_id_, msg.id_,"*✯︙انتظر 7 دقائق من فضلك من فضلك\n✯︙ثم اعد المحاوله بعدها*")
 end
-database:setex(bot_id..'abbas:all:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
+database:setex(bot_id..'rep:all:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub('-100','')},function(argg,dataa) 
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = dataa.member_count_},function(ta,amir)
 x = 0
@@ -59,11 +59,11 @@ end
 if text and (text:match("^@all (.*)$") or text:match("^all (.*)$")) and BasicConstructor(msg) then
 AbsText = text:match("^@all (.*)$") or text:match("^all (.*)$")
 if not database:get(bot_id..'Cick:all'..msg.chat_id_) then
-if database:get(bot_id.."abbas:all:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
+if database:get(bot_id.."rep:all:Time"..msg.chat_id_..':'..msg.sender_user_id_) then  
 return 
 send(msg.chat_id_, msg.id_,"*✯︙انتظر 7 دقائق من فضلك من فضلك\n✯︙ثم اعد المحاوله بعدها*")
 end
-database:setex(bot_id..'abbas:all:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
+database:setex(bot_id..'rep:all:Time'..msg.chat_id_..':'..msg.sender_user_id_,300,true)
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub('-100','')},function(argg,dataa) 
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = dataa.member_count_},function(ta,amir)
 x = 0
